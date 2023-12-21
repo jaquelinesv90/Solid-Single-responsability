@@ -21,11 +21,9 @@ public enum Cargo {
             return salarioBase * 0.05;
         }
     },
-    CEO{
-        @Override
-        public double calculaBonificacao(double salarioBase){
-            return salarioBase * 0.05;
-        }
+    ESTAGIARIO;
+
+    public  double calculaBonificacao(double salarioBase){
+        return 0;
     }
-    public abstract double calculaBonificacao(double salarioBase);
 }

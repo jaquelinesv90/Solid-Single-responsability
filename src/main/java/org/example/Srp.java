@@ -13,14 +13,14 @@ public class Srp {
                 new Colaborador("Zequinha",Cargo.DESENVOLVEDOR,500),
                 new Colaborador("Zezinho",Cargo.ANALISTA,1000),
                 new Colaborador("Carlinhos",Cargo.GERENTE,2000),
-                new Colaborador("Luizinho",Cargo.ESTAGIARIO,250),
+                new Colaborador("Luizinho",Cargo.ESTAGIARIO,250)
         );
 
         final CalculadoraBonificacao calculadora = new CalculadoraBonificacao();
 
         colaboradores.forEach(colaborador ->{
             System.out.printf("O colaborador %s tem bonificacao de %f%n",
-                    colaborador.nome(), calculadora.calculadoraBonificacao(colaborador)).println();
+                    colaborador.nome(), calculadora.calculaBonificacao(colaborador)).println();
         });
     }
 }
